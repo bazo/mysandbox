@@ -1,0 +1,4 @@
+nette:
+	session:
+		autoStart: smart
+		expiration: '+365 days'

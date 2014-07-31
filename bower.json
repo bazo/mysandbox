@@ -1,0 +1,12 @@
+{
+	"name": "logviewer",
+	"dependencies": {
+		"jquery": "*",
+		"requirejs": "*",
+		"bootstrap": "*",
+		"nette.ajax.js": "*",
+		"lesshat": "*",
+		"modernizr": "*",
+		"detectizr": "*"
+	}
+}

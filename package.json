@@ -1,0 +1,32 @@
+{
+	"name": "sandbox",
+	"version": "0.0.0",
+	"description": "",
+	"directories": {
+		"test": "test"
+	},
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"source-map-support": "~0.2.5",
+		"typescript": "~1.0.0",
+		"gulp": "~3.6.0",
+		"gulp-clean": "~0.2.4",
+		"gulp-mocha": "~0.4.1",
+		"gulp-notify-growl": "~1.0.1",
+		"gulp-tsc": "~0.7.0",
+		"gulp-changed": "~0.3.0",
+		"mocha": "~1.18.2",
+		"chai": "~1.9.1"
+	},
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@bitbucket.org:Bazo/child-score.git"
+	},
+	"author": "",
+	"license": "ISC"
+}

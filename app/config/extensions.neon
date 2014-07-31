@@ -1,0 +1,7 @@
+extensions:
+	console: Bazo\Console\DI\ConsoleExtension
+	monolog: Bazo\Monolog\DI\MonologExtension
+
+console:
+	name: %app.name% CLI
+	version: 0.1.0

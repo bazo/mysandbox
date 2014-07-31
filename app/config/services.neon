@@ -1,0 +1,28 @@
+services:
+
+	#routes
+	routerFactory: App\RouterFactory
+	router: @routerFactory::createRouter
+
+	#utils
+	- Nette\Utils\FileSystem
+	output:
+		class: Symfony\Component\Console\Output\ConsoleOutput
+		setup:
+			- setVerbosity(Symfony\Component\Console\Output\OutputInterface::VERBOSITY_VERBOSE)
+
+	#security
+	keyGenerator: \Services\KeyGenerator
+
+	- Security\CipherKey(%cipher.key.length%, %cipher.key.storagePath%)
+	- Security\CipherFactory
+	cipher: @Security\CipherFactory::create
+
+
+
+	#logging
+	defaultLogger:
+		class: Nette\Diagnostics\Logger
+		tags: ['logger']
+
+	#factories

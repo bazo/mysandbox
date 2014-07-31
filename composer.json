@@ -1,0 +1,25 @@
+{
+	"name": "bazo/sandbox",
+	"description": "The sandbox is a pre-packaged Nette Framework project, basic configured structure for your application.",
+	"type": "project",
+	"license": ["Unlicense"],
+	"authors": [
+		{
+			"name": "Martin Bažík",
+			"homepage": "http://bazo.sk"
+		}
+	],
+	"require": {
+		"php": ">= 5.5.0",
+		"nette/nette": "~2.2.0",
+		"bazo/nette-console-extension": "@dev",
+		"bazo/nette-monolog-extension": "@dev",
+		"bazo/nette-chain-logger-extension": "@dev",
+		"kdyby/events": "@dev",
+		"phpseclib/phpseclib": "@dev"
+	},
+	"require-dev": {
+		"nette/tester": "~1.0"
+	},
+	"minimum-stability": "stable"
+}

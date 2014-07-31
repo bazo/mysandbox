@@ -1,0 +1,12 @@
+parameters:
+	app:
+		name: sandbox
+
+	cipher:
+		key:
+			length: 256
+			storagePath: %appDir%/key
+
+	domainBase: example.com
+	domain: http://%domainBase%
+	apiDomain: http://api.%domainBase%

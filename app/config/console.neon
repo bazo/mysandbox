@@ -1,0 +1,13 @@
+services:
+	#console.commands
+	createUser:
+		class: Console\Command\CreateUser
+		tags: [console.command]
+
+	install:
+		class: Console\Command\Install
+		tags: [console.command]
+
+	#helpers
+
+	- {class: Symfony\Component\Console\Helper\DialogHelper, tags: [console.helper]}

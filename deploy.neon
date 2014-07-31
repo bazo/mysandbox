@@ -1,0 +1,11 @@
+shared_folders:
+	- temp
+	- log
+	- app/local
+hooks:
+	after_receive:
+		- "composer install --optimize-autoloader --no-dev --prefer-dist --profile -v -n"
+		- "bower install"
+	before_deploy:
+	after_deploy:
+		- "sudo service php5-fpm restart"
